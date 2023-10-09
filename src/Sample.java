@@ -3,13 +3,12 @@ public class Sample {
     static int outbox2 = 5;
 
     public static void main(String[] args) {
-        int box1 = 5;
-        {
-            int box2 = 2;
-            System.out.println(box1);
-            System.out.println(box2);
-        }
-//        System.out.println(box2);
-//        System.out.println(outbox1);
+        int min = Integer.MIN_VALUE;
+        int max = Integer.MAX_VALUE;
+
+        // overflow
+        System.out.println(--min);
+        System.out.println(++max);
+
     }
 }
