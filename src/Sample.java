@@ -1,10 +1,14 @@
 public class Sample {
+    int outbox1 = 7;
+    static int outbox2 = 5;
+
     public static void main(String[] args) {
-        StringBuffer sb = new StringBuffer();
-        sb.append("Hello");
-        sb.append(" ");
-        sb.append("World");
-        String res = sb.toString();
-        System.out.println(res);
+        int min = Integer.MIN_VALUE;
+        int max = Integer.MAX_VALUE;
+
+        // overflow
+        System.out.println(--min);
+        System.out.println(++max);
+
     }
 }
