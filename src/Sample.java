@@ -3,12 +3,11 @@ public class Sample {
     static int outbox2 = 5;
 
     public static void main(String[] args) {
-        int min = Integer.MIN_VALUE;
-        int max = Integer.MAX_VALUE;
+        double dVal1 = 0.1;
+        double dVal2 = 0.2;
 
-        // overflow
-        System.out.println(--min);
-        System.out.println(++max);
+        // 부동소수점
+        System.out.println(dVal1 + dVal2 == 0.3);
 
     }
 }
